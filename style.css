@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.gamecontainer{
+    box-sizing: border-box;
+    padding: 0 2rem;
+    margin-top: 8rem;
+    display: flex;
+    gap:4rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10rem);
+    grid-template-rows: repeat(3,10rem);
+}
+
+.box{
+    border: 2px solid rgb(12, 91, 160);
+    font-size: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background: rgb(180, 180, 209);
+    cursor: pointer;
+}
+
+.game-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+button{
+    background: rgb(35, 33, 33);
+    color: white;
+    border-radius: 8px;
+    padding: 0.5vw 2vw;
+    font-size: 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+button:hover{
+    opacity: 1;
+}
+
+.bt-0{
+    border-top: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+.turn-text{
+    display: block;
+}
+
+
+
+@media screen and (max-width:1100px)
+{
+  .gamecontainer{
+    margin-top: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4rem;
+  }
+  .game-info{
+    gap: 0.8rem;
+    font-size: 1.5rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,8rem);
+    grid-template-rows: repeat(3,8rem);
+}
+button{
+    background: rgb(35, 33, 33);
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+}
+
+
+@media screen and (max-width:600px)
+{
+  .gamecontainer{
+    margin-top: 8rem;
+    gap:4rem;
+  }
+  .game-info{
+    gap: 0.8rem;
+    font-size: 1.2rem;
+}
+.container{
+    grid-template-columns: repeat(3,7rem);
+    grid-template-rows: repeat(3,7rem);
+}
+button{
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+}
+}
+
+
+@media screen and (max-width:480px)
+{
+  .gamecontainer{
+    margin-top: 8rem;
+    gap:4rem;
+  }
+  .game-info{
+    gap: 0.7rem;
+    font-size: 1rem;
+}
+.container{
+    grid-template-columns: repeat(3,6rem);
+    grid-template-rows: repeat(3,6rem);
+}
+button{
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    margin-top: 0.8rem;
+}
+}
+
+@media screen and (max-width:400px)
+{
+  html{
+    font-size: 12px;
+  }
+  .gamecontainer{
+    margin-top: 15rem;
+    gap:6rem;
+  }
+  .game-info{
+    gap: 0.7rem;
+    font-size: 1.2rem;
+}
+.container{
+    grid-template-columns: repeat(3,7rem);
+    grid-template-rows: repeat(3,7rem);
+}
+button{
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    margin-top: 0.8rem;
+}
+}
+
+
+@media screen and (max-width:270px)
+{
+  html{
+    font-size: 9px;
+  }
+  .gamecontainer{
+    margin-top: 20rem;
+    gap:6rem;
+  }
+  .game-info{
+    gap: 0.7rem;
+    font-size: 1.2rem;
+}
+.container{
+    grid-template-columns: repeat(3,7rem);
+    grid-template-rows: repeat(3,7rem);
+}
+button{
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    margin-top: 0.8rem;
+}
+}
